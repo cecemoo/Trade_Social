@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags  %}
+{% block content %}
+<div class=" container pk-5">
+    <br>
+    {% if perms.auth.add_user %}
+    <h3 class="text-center">Add New User</h3><br>
+    <form action="{% url 'add_user' %}" method="POST" >
+        {% csrf_token %}
+        {{form | crispy}}
+        <button type="submit" class="btn btn-warning">Submit</button>
+    </form><br>
+    {% else %}
+    <h3 class="text-center">You are not authorized to add user</h3>
+    {% endif %}
+</div>
+
+
+{% endblock %}

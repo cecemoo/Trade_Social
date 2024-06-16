@@ -1,0 +1,656 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+  <div class="container position-relative">
+    <div class="row gy-5" data-aos="fade-in">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+        <h2>Welcome to <span>Trade Social</span></h2>
+        <p>Where Selling Meets Social - Post, Promote, Negotiate, and Sell !</p>
+        {% comment %} <div class="d-flex justify-content-center justify-content-lg-start">
+          <a href="#about" class="btn-get-started">Get Started</a>
+          <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+              Video</span></a>
+        </div> {% endcomment %}
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img src="{% static 'assets/img/hero-img.svg' %}" class="img-fluid" alt="" data-aos="zoom-out"
+          data-aos-delay="100">
+      </div>
+    </div>
+  </div>
+
+  <div class="icon-boxes position-relative">
+    <div class="container position-relative">
+      <div class="row gy-4 mt-5">
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-easel"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Showcase your products</a></h4>
+          </div>
+        </div><!--End Icon Box -->
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-gem"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Promote your sales</a></h4>
+          </div>
+        </div><!--End Icon Box -->
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Connect with customers</a></h4>
+          </div>
+        </div><!--End Icon Box -->
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-command"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Boost your sales</a></h4>
+          </div>
+        </div><!--End Icon Box -->
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+<!-- End Hero Section -->
+
+<main id="main">
+
+
+  <!-- ======= Marketplace Section ======= -->
+  <section id="marketplace" class="portfolio sections-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Marketplace</h2>
+        <p>Welcome to Trade Social, the innovative marketplace where commerce meets community. Our platform empowers
+          merchants to showcase their products, promote sales, and engage directly with customers in a dynamic,
+          interactive environment. Whether you're a buyer looking for the best deals or a seller eager to expand your
+          reach, Trade Social provides the tools you need to negotiate, connect, and thrive. Experience a new way to
+          shop
+          and sell - where every transaction is an opportunity to build relationships and drive success. Join us at
+          Trade
+          Social and transform your business today!</p>
+      </div>
+
+      <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+        data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+        <div>
+          <ul class="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-clothing">Clothing</li>
+            <li data-filter=".filter-food">Food</li>
+            <li data-filter=".filter-service">Services</li>
+            <li data-filter=".filter-home">Home</li>
+          </ul><!-- End Portfolio Filters -->
+        </div>
+
+        <div class="row gy-4 portfolio-container">
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-clothing">
+            <div class="post-img">
+              <img src="{% static 'assets/img/Frontdoor1.jpeg' %}" alt="" class="img-fluid">
+            </div>
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/app-1.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="https://pahnawa.net" title="More Details">Pahnawa</a></h4>
+                <p>+91 12345 12345</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-food">
+
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/product-1.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">PaPa's Bakery
+                  </a></h4>
+                <p>Your local bakery</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-service">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/branding-1.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Law Consult Inn</a></h4>
+                <p>Private legal provider</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-home">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/books-1.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Penn's Furniture</a></h4>
+                <p>Luxuray mattress for home</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-clothing">
+            <div class="post-img">
+              <img src="{% static 'assets/img/zara.png' %}" alt="" class="img-fluid">
+            </div>
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/app-2.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Zara</a></h4>
+                <p>Fashion and modern</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/product-2.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">MaMa's Sweet</a></h4>
+                <p>Sweet shop, sweet home</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-service">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/branding-2.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Smart Clinic</a></h4>
+                <p>Your local urgent care</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-home">
+            <div class="post-img">
+              <img src="{% static 'assets/img/IKEA.png' %}" alt="" class="img-fluid">
+            </div>
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/books-2.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">IKEA</a></h4>
+                <p>Nice and resonable price </p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-clothing">
+            <div class="post-img">
+              <img src="{% static 'assets/img/banana republic.png' %}" alt="" class="img-fluid">
+            </div>
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/app-3.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Banana Republic</a></h4>
+                <p>French styleing, your style</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/product-3.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Fresh Farm</a></h4>
+                <p>Your local farm</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-bank">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/branding-3.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Trust Bank</a></h4>
+                <p>Saving for life</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-xl-4 col-md-6 portfolio-item filter-home">
+            <div class="portfolio-wrap">
+              <a href="{% static 'assets/img/portfolio/books-3.jpg' %}" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">Lewis Kitchen Tools</a></h4>
+                <p>Kitchen utentials and all</p>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </div>
+  </section><!-- End Marketplace Section -->
+
+  <!-- ======= Featured Posts Section ======= -->
+  <section id="featured-posts" class="recent-posts sections-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Special Posts</h2>
+        <p>Welcome to Trade Social Posts!</p>
+        <p>Here, you'll find the latest tips, trends, and insights to help you make the most of our dynamic marketplace.
+          Whether you're a merchant looking to boost your sales or a customer searching for the best deals, our blog is
+          your go-to resource for expert advice, success stories, and community updates. Join us as we explore the
+          exciting world of social commerce and discover how Trade Social transforming the way we buy and sell.</p>
+      </div>
+
+      <div class="row gy-4">
+
+        {% for i in featured_posts %}
+        <div class="col-xl-4 col-md-6">
+          <article>
+
+            <div class="post-img">
+              <img src="{{i.featured_image.url}}" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">{{i.category | capfirst }}</p>
+
+            <h2 class="title">
+              <a href="{% url 'blogs' i.slug %}">{{i.title}}</a>
+            </h2>
+            <div class="d-flex align-items-center">
+              <p class="post-author">{{i.author}}</p>
+              <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+              <div class="post-meta">
+                <p class="post-author">{{ i.short_description | truncatewords:10 }}</p>
+                <p class="post-date"><br>
+                  <time datetime="2022-01-01">{{i.created_at | timesince }} ago</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+        {% endfor %}<!-- End post list item -->
+
+
+
+
+        <!-- Pagination 2 Section -->
+        <div class="blog-pagination">
+          <div class="d-flex justify-content-center">
+          
+              {% if posts.has_previous %}
+                 <a href="?page={{posts.previous_page_number}}">previous</a><br>
+              {% endif %}
+            <span class="current">
+               <a  class="active" href="">{{posts.number}}</a><br>
+             </span>
+              {% if posts.has_next %}
+                 <a href="?page={{posts.next_page_number}}">next</a>
+              {% endif %}
+         
+          </div>
+        </div>
+        <!-- /Pagination 2 Section -->
+      </div>
+    </div>
+  </section><!-- End Featured Posts Section -->
+
+  <!-- ======= Call To Action Section ======= -->
+  <section id="call-to-action" class="call-to-action">
+    <div class="container text-center" data-aos="zoom-out">
+
+      <h3>Call To Action</h3>
+      <p> Ready to take your advertising to the next level? Join us today and start leveraging our cost-effective
+        advertising solutions. Don't miss out on the opportunity to connect with a wider audience and boost your
+        visibility. Contact us now</p>
+      <a class="cta-btn" href="#contact">Call To Action</a>
+    </div>
+  </section><!-- End Call To Action Section -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>About Us</h2>
+
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <h3>Trade Social: Empowering Local Businesses in Aurangabad, Bihar</h3>
+          <img src="{% static 'assets/img/man.png' %}" class="img-fluid rounded-4 mb-4" alt="">
+          <p>Trade Social was born out of a heartfelt desire to uplift the local business community in Aurangabad,
+            Bihar. The story begins with Mr. Agrawal, a native of Aurangabad, who grew up witnessing the vibrant but
+            often unadvertised local businesses in his hometown. After spending several years in the US, where he gained
+            invaluable experience and insights in the world of business and technology, Mr. Agrawal decided it was tiime
+            to give back to his roots. Upon his return to Aurangabad, Mr. Agrawal noticed a significant gap in the local
+            market: a lack of effective advertising platforms for small businesses and services. He understood that
+            these businesses, though rich in potential, were struggling to reach a wider audience and complete with
+            larger entities. This realization sparked the inception of Trade Social. </p>
+          <p>Trade Social was created with a simple yet powerful vision: to provide a dedicated platform where local
+            residents could easily post sales, promote their goods, and connect with potential customers. It aims to
+            democratize advertising, making it accessible and affordable for everyone in the community. Through Trade
+            Social, local businesses in Aurangabad can now showcase their products, share special offers, and attract
+            more customers than ever before. </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="content ps-0 ps-lg-5">
+            <p class="fst-italic">
+              When its launched, Trade Social is aim to become a cornerstone for the local economy, fostering growth and
+              enabling small businesses to thrive. By bridging the gap between sellers and buyers, the platform not only
+              boosts the visibility of local enterprises but also strengthens the sense of community in Aurangabad.
+            </p>Mr. Agrawal's vision for Trade Social is rooted in his deep love for his hometown and his commitment to
+            its prosperity. With Trade Social, he hopes to create a sustainable ecosystem where local businesses can
+            flourish, contributing to the overall economic and social development of Aurangabad, Bihar.
+
+
+            <div class="position-relative mt-4">
+              <img src="{% static 'assets/img/social-media.png' %}" class="img-fluid rounded-4" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients">
+    <div class="container" data-aos="zoom-out">
+
+      <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-7.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
+  <!-- ======= Stats Counter Section ======= -->
+  <section id="stats-counter" class="stats-counter">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row gy-4 align-items-center">
+
+        <div class="col-lg-6">
+          <img src="{% static 'assets/img/stats-img.svg' %}" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="stats-item d-flex align-items-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p><strong>Empowering Local Business</strong> &nbsp provides an accessible platform for local businesses</p>
+          </div><!-- End Stats Item -->
+
+          <div class="stats-item d-flex align-items-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p><strong>Community Focused</strong> &nbsp fosters connections between local sellers and buyers</p>
+          </div><!-- End Stats Item -->
+
+          <div class="stats-item d-flex align-items-center">
+            <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p><strong>User-Friendly and Affordable</strong> &nbsp be benefited from effective advertising and increased
+              visibility </p>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Stats Counter Section -->
+
+
+
+  <!-- ======= Our Services Section ======= -->
+  <section id="services" class="services sections-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Trade Social provides a platform for merchants to post their products and promote their sales with customer
+          interaction options.</p>
+      </div>
+
+      <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-activity"></i>
+            </div>
+            <h3>Product Listing</h3>
+            <p>Allow merchants to create detailed listings for their products, including descriptions, prices, and
+              high-quality images.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-broadcast"></i>
+            </div>
+            <h3>Customer Reviews and Ratings</h3>
+            <p>Enable customers to leave reviews and ratings on products to build trust and provide feedback to
+              merchants.
+            </p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-easel"></i>
+            </div>
+            <h3>Bargaining and Negotiation Tools</h3>
+            <p>Provide features for customers to make offers and negotiate prices directly with merchants.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-bounding-box-circles"></i>
+            </div>
+            <h3>Verified Merchant Accounts</h3>
+            <p>Offer verification services for merchants to build credibility and trust with customers.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-calendar4-week"></i>
+            </div>
+            <h3>Advertising Services</h3>
+            <p>Allow merchants to purchase advertising space on the platform to promote their products.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-chat-square-text"></i>
+            </div>
+            <h3>Community Features</h3>
+            <p>Develop community-building features such as forums, groups, and events to encourage interaction and
+              engagement.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+  </section><!-- End Our Services Section -->
+
+
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Please fill out the form below and we will get back to you.</p>
+      </div>
+
+      <div class="row gx-lg-0 gy-4">
+
+        <div class="col-lg-4">
+
+          <div class="info-container d-flex flex-column align-items-center justify-content-center">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>Aurangabad, Bihar</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>tradesocialservice@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>+91 12345 12345 </p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h4>Open Hours:</h4>
+                <p>Mon-Sat: 11AM - 23PM</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+        </div>
+
+        <div class="col-lg-8">
+          <form action="" method="post" role="form" class="php-email-form">
+            {% csrf_token %}
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+
+{% endblock %}

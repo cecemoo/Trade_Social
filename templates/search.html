@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<br><div class="mx-auto p-2" style="width: 500px;">
+    <!-- Search widget-->
+    <div class="card mb-4">
+        <form action="{% url 'search' %}" method="GET">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+                <div class="input-group">
+                    <input class="form-control" type="text" value="{{keyword}}" name="keyword"
+                        aria-label="Enter search term..." aria-describedby="button-search" />
+                    <button class="btn btn-warning" type="submit" id="button-search" type="button">Go!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Side widget-->
+</div>
+
+<br>
+<h3 class="text-warning text-center" style="letter-spacing: 2px;">Search Term - {{ keyword }}</h3><br>
+
+<div class="row mb-2 ">
+    {% if blogs %}
+    {% for i in blogs %}
+
+    <div class=" card  col-xl-4  px-5 bg-light">
+        <article >
+            <div class="post-img">
+                <img src="{{i.featured_image.url}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="card-body">
+             <p class="post-category">{{i.category | capfirst }}</p>
+
+            <h2 class="title">
+                <a href="{% url 'blogs' i.slug %}">{{i.title}}</a>
+            </h2>
+            <div class="d-flex align-items-center">
+                <p class="post-author">{{i.author}}</p>
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                    <p class="post-author">{{ i.short_description | truncatewords:10 }}</p>
+                    <p class="post-date"><br>
+                        <time datetime="2022-01-01">{{i.created_at | timesince }} ago</time>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </article>
+    </div>
+
+
+    {% endfor %}<!-- End post list item -->
+
+    {% else %}
+    <div class="container" data-aos="fade-up">
+        <p>No Post Found</p>
+    </div>
+    {% endif %}
+
+
+
+    {% endblock %}

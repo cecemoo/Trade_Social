@@ -1,0 +1,45 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class=" container pk-5">
+<br><h3 class="text-center"> All Categories</h3><br>
+
+<div class="row px-5">
+{% include 'dashboard/sidebar.html' %}
+
+<div class="col-md-9 px-5">
+    <a href="{% url 'add_category' %}" class="btn btn-dark text-light float-right mb-2">Add New Category</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Category Name</th>
+      <th scope="col">Created At</th>
+      <th scope="col">Updated At</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for category in categories %}
+    <tr>
+      <td >{{forloop.counter}}</td>
+      <td>{{category}}</td>
+      <td>{{category.created_at}}</td>
+      <td>{{category.updated_at}}</td>
+      <td>
+      <a  href="{% url 'edit_category' category.id %}"><i class="fa-solid fa-pen-to-square" style="color: #FFD43B;"></i></a>&nbsp;
+        <a  href="{% url 'delete_category' category.id %}"><i class="fa-solid fa-trash" style="color: #ac3b15;"></i></a>
+      </td>
+    </tr>
+    {% endfor %}
+    
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+{% endblock %}
